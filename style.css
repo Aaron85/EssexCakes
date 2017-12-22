@@ -1,0 +1,152 @@
+body {
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-weight: 500;
+    font-size: 1.3em;
+    margin: 0 auto;
+}
+#header {
+    background-color: #F17A97;
+}
+h1 {
+    font-family: 'Amatic SC', cursive;
+    letter-spacing: 1.3px;
+    font-size: 2.5em;
+    color: #C1F0F4;
+}
+h2 {
+    font-family: 'Amatic SC', cursive;
+    color: #F17A97;
+}
+#header {
+    grid-area: header;
+}
+#main {
+    grid-area: main;
+}
+.mainpic img {
+    width: 100%;
+    max-width: 800px;
+}
+.mainpic p {
+    padding: 0 20px 0 20px;
+}
+.nested {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+.nested p {
+    margin: 0 auto;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.nested img {
+    max-width: 400px;
+    width: 100%;
+}
+#side {
+    grid-area: side;
+}
+#side ul {
+    list-style: none;
+}
+.services p {
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+.times {
+    padding-bottom: 30px;
+}
+.times p {
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+.awards ul li img {
+    padding: 15px 0 15px 0;
+    margin-right: 30px;
+}
+.awards img {
+    width: 100%;
+    max-width: 120px;
+}
+#footer {
+    grid-area: footer;
+    background-color: #F17A97;
+}
+#footer h2 {
+    color: #C1F0F4;
+}
+.nestedfoot {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+.times-footer {
+    grid-column: 2/3;
+}
+.times-footer h2 {
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+.contact {
+    grid-column: 3/4;
+}
+.contact p {
+    margin: 0 auto;
+}
+.contact h2 {
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+#content {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(120px, auto);
+    grid-gap: 10px;
+    margin: 0 auto;
+    grid-template-areas: 
+    "header header header header header header"
+    "main main main main main main"
+    "main main main main main main"
+    "main main main main main main"
+    "main main main main main main"
+    "main main main main main main"
+    "main main main main main main"
+    "main main main main main main"
+    "main main main main main main"
+    "main main main main main main"
+    "side side side side side side"
+    "side side side side side side"
+    "side side side side side side"
+    "side side side side side side"
+    "side side side side side side"
+    "side side side side side side"
+    "side side side side side side"
+    "side side side side side side"
+    "side side side side side side"
+    "footer footer footer footer footer footer"
+    "footer footer footer footer footer footer";
+}
+@media screen and (min-width: 760px){
+    #content {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: minmax(120px, auto);
+        grid-gap: 10px;
+        margin: 0 auto;
+        grid-template-areas: 
+        "header header header header header header"
+        ". main main main side ."
+        ". main main main side ."
+        ". main main main side ."
+        ". main main main side ."
+        ". main main main side ."
+        ". main main main side ."
+        ". main main main side ."
+        ". main main main side ."
+        ". main main main side ."
+        "footer footer footer footer footer footer"
+        "footer footer footer footer footer footer";
+    }
+}
